@@ -11,8 +11,9 @@ imiona.insert(2,'Kuba')
 print(imiona)
 
 wpiszImie= str(input('Wpisz imię, które chcesz usunąć'))
+wpiszImie.strip()
 
-if(wpiszImie==imiona)
+if(wpiszImie==imiona):
     imiona.remove(wpiszImie)
     print(imiona)
     print(wpiszImie)
@@ -21,3 +22,12 @@ else:
     print("Podane imie nie istnieje w zbiorze")
 
 imiona[:len(imiona)-1]
+
+imiona.sort();
+print(imiona)
+
+imiona.sort(reverse=True)
+print(imiona)
+
+imiona[:len(imiona)//2]=[]
+print(imiona)
